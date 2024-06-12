@@ -2,12 +2,11 @@ package must_test
 
 import (
 	"fmt"
-	"testing"
 
 	"github.com/dancantos/must"
 )
 
-func ExampleMust(t *testing.T) {
+func ExampleMust() {
 	fn := func() (string, error) {
 		return "Hello World", nil
 	}
@@ -16,7 +15,7 @@ func ExampleMust(t *testing.T) {
 	// Output: Hello World
 }
 
-func ExampleOk(t *testing.T) {
+func ExampleOk() {
 	fn := func() (string, bool) {
 		return "Hello World", true
 	}
